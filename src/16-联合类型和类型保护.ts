@@ -51,7 +51,9 @@ function add(first: string | number, second: string | number) {
 // 第四种 类型保护-instanceof 语法
 // 比如现在要作类型保护的是一个对象，这时候就可以使用instanceof语法来作。
 class NumberObj {
-  count: number;
+  constructor(public count:number){
+    this.count = count;
+  }
 }
 
 function addObj(first: object | NumberObj, second: object | NumberObj) {
@@ -60,4 +62,4 @@ function addObj(first: object | NumberObj, second: object | NumberObj) {
   }
   return 0;
 }
-console.log(addObj(new NumberObj(), new NumberObj()));
+console.log(addObj(new NumberObj(2), new NumberObj(3)));

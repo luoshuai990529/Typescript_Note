@@ -19,6 +19,7 @@
           "alwaysStrict":
 
         "sourceMap": true 信息文件 js文件和ts文件一个映射的关系 xxx.js.map ,用来排查错误
+        "outFile":"./build/page.js" 配置只生成一个文件
         "outDir": "./build", 编译后存放在哪里  
         "rootDir": "./src", 
         "noUnusedLocals":true 如果有没有使用的变量，我们打包的时候就会给我们提示
